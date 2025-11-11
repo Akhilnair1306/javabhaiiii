@@ -13,10 +13,15 @@ public class Main {
         // tree.populate(nums);
         // tree.display();
 
-        AVL tree = new AVL();
-        for (int i = 0; i <=10 ; i++) {
-            tree.insert(i);
-        }
+        // AVL tree = new AVL();
+        // for (int i = 0; i <=10 ; i++) {
+        //     tree.insert(i);
+        // }
+        // tree.display();
+        SegmentTrees tree = new SegmentTrees();
+        int[] arr = {3,8,7,6,-2,-8,4,9};
+        tree.insert(arr);
         tree.display();
+        tree.findRangeSum(2, 6);
     }
 }
